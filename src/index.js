@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import store from './store'
+import Route from './Route'
+import 'antd/dist/antd.less'
+
 
 ReactDOM.render(
-  <h1>Hello World</h1>,
+  <Provider store={store}>
+    <Route></Route>
+  </Provider>,
   document.querySelector('#app')
 )
