@@ -1,21 +1,21 @@
 import React from 'react'
-import { Input, Icon } from 'antd'
+import { Input, Icon, Rate } from 'antd'
 import { Link } from 'react-router-dom'
 import { MomentItem, MomentTitle,
   Avatar, PostImage, MessageWords,
   InputContainer, MomentReply,
-  MomentGeo
+  MomentGeo, RateContainer
 } from './styled-components'
 
 export default (props) => {
   return (
     <MomentItem>
       <MomentTitle>
-        <Avatar src="/test.jpg" alt="" />
-        刘璐
+        <Avatar src={props.avatar} alt="" />
+        {props.username}
       </MomentTitle>
-      <MessageWords>旋转，跳跃，动起来</MessageWords>
-      <PostImage src="./post.jpg" alt="" />
+      <MessageWords>{props.postcontent}</MessageWords>
+      <PostImage src={props.postimage} alt="" />
       <MomentGeo>
         <Icon type="environment" style={{fontSize: '1.2em'}} />
         <span
@@ -30,20 +30,14 @@ export default (props) => {
             top: '0.1em'
           }}
         >
-          420 km
+          {props.distance} km
         </span>
 
       </MomentGeo>
-      <InputContainer>
-        <Input type='text' placeholder='喵一下我吧~'
-          style={{fontSize: '1.2em'}}
-          suffix={<Icon type="enter" style={{fontSize: '1.2em', color: '#E32E7F'}}/>}
-        />
-      </InputContainer>
-      <MomentReply>
-        <Link to="/home" style={{ color: '#24396A' }}>色色哒: </Link>
-        今天是个好日子
-      </MomentReply>
+      <RateContainer>
+        <Rate /><span className="ant-rate-text">{props.rate} 分</span>
+      </RateContainer>
+
     </MomentItem>
   )
 }

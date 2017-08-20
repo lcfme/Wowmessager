@@ -10,7 +10,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <HeaderPannel />
+        <HeaderPannel dispatch={this.props.dispatch} />
       </div>
     )
   }

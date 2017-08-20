@@ -17,6 +17,8 @@ class Home extends Component {
 
 export default connect(
   ({mainLayout})=>{
-    return mainLayout
+    return {
+      ...mainLayout
+    }
   }
 )(Home)

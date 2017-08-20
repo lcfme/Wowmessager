@@ -36,7 +36,7 @@ export default connect(({moments})=>{
     return (
       <div>
         {JSON.stringify(this.props)}
-        <MomentPanel dispatch={this.props.dispatch} />
+        <MomentPanel {...this.props} />
       </div>
     )
   }

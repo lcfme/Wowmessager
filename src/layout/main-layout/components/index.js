@@ -2,6 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import Header from '../../header/containers'
 import Monments from '../../../modules/moments/containers'
+import Upload from '../../upload/containers'
+
+const HomeContainer = styled.div`
+  width: 100%;
+  overflow-x: hidden;
+`
 
 const Loading = styled.img`
   display: ${props => props.isFetching ? 'inline-block' : 'none'};
@@ -13,12 +19,12 @@ const Loading = styled.img`
   z-index: 9999;
 `
 export default (props) => {
-  console.log(props)
   return (
-    <div>
+    <HomeContainer>
       <Loading isFetching={props.isFetching} src="/infras/imgs/loading.svg" />
+      <Upload />
       <Header />
       <Monments />
-    </div>
+    </HomeContainer>
   )
 }

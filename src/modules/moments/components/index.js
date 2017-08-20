@@ -5,7 +5,13 @@ import MomentItem from './MomentItem'
 export default (props) => {
   return (
     <MomentContainer>
-      <MomentItem />
+    {
+      props.results && props.results.map((item, index) => {
+        return (
+          <MomentItem key={item.postid} {...item} />
+        )
+      })
+    }
     </MomentContainer>
   )
 }
