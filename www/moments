@@ -1,1 +1,36 @@
-{"error":false,"result":[{"postid":"1001","username":"刘璐","gender":"female","avatar":"/test.jpg","messagesend":"今天好嗨森","distance":2,"comments":[{"username":"脑残粉","content":"你好漂亮"}]},{"postid":"1002","username":"关雎尔","gender":"female","avatar":"/guanguan.jpg","messagesend":"感觉没有导演找我拍戏了","distance":1.5,"comments":[{"username":"脑残粉","content":"活该"}]},{"postid":"1003","username":"关晓彤","gender":"female","avatar":"/guanxiaotong.jpg","messagesend":"我真的怎么吃也不胖","distance":10,"comments":[{"username":"我是神","content":"你会的"}]},{"postid":"1004","username":"阮一峰","gender":"male","avatar":"/guanxiaotong.jpg","messagesend":"我真的怎么吃也不胖","distance":10,"comments":[{"username":"我是神","content":"你会的"}]}]}
+{
+  "error": false,
+  "result": [{
+    "postid": "1001",
+    "username": "刘璐",
+    "gender": "female",
+    "avatar": "/test.jpg",
+    "messagesend": "今天好嗨森",
+    "distance": 2,
+    "rate": 5
+  }, {
+    "postid": "1002",
+    "username": "关雎尔",
+    "gender": "female",
+    "avatar": "/guanguan.jpg",
+    "messagesend": "感觉没有导演找我拍戏了",
+    "distance": 1.5,
+    "rate": 4
+  }, {
+    "postid": "1003",
+    "username": "关晓彤",
+    "gender": "female",
+    "avatar": "/guanxiaotong.jpg",
+    "messagesend": "我真的怎么吃也不胖",
+    "distance": 10,
+    "rate": 5
+  }, {
+    "postid": "1004",
+    "username": "阮一峰",
+    "gender": "male",
+    "avatar": "/guanxiaotong.jpg",
+    "messagesend": "我真的怎么吃也不胖",
+    "distance": 10,
+    "rate": 3.5
+  }]
+}
