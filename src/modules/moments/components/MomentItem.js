@@ -6,6 +6,7 @@ import { MomentItem, MomentTitle,
   InputContainer, MomentReply,
   MomentGeo
 } from './styled-components'
+
 export default (props) => {
   return (
     <MomentItem>
@@ -16,11 +17,7 @@ export default (props) => {
       <MessageWords>旋转，跳跃，动起来</MessageWords>
       <PostImage src="./post.jpg" alt="" />
       <MomentGeo>
-        <img
-          src='http://lbs.amap.com/web/public/dist/images/favicon.ico'
-          alt=''
-          style={{ height: '100%', position: 'absolute', left: 0 }}
-        />
+        <Icon type="environment" style={{fontSize: '1.2em'}} />
         <span
           style={{
             display: 'inline-block',

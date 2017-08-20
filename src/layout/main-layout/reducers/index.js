@@ -1,5 +1,6 @@
 const initialState = {
-  testState: 'Hello World'
+  testState: 'Hello World',
+  isFetching: false,
 }
 
 export default (state = initialState, action) => {
@@ -8,6 +9,16 @@ export default (state = initialState, action) => {
       return {
         ...state,
         testState: action.payload
+      }
+    case 'mainLayout/fetchStart':
+      return {
+        ...state,
+        isFetching: true,
+      }
+    case 'mainLayout/fetchEnd':
+      return {
+        ...state,
+        isFetching: false,
       }
     default:
       return state

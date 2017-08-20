@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import HomePannel from '../components'
 class Home extends Component {
   constructor(props) {
     super()
@@ -9,8 +9,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        {this.props.testState}
-        <button onClick={(e)=>{this.props.dispatch({type: 'mainLayout/test', payload: 'Happy coding'})}}>测试</button>
+        <HomePannel {...this.props}/>
       </div>
     )
   }
@@ -19,10 +18,5 @@ class Home extends Component {
 export default connect(
   ({mainLayout})=>{
     return mainLayout
-  },
-  (dispatch)=>{
-    return {
-      dispatch
-    }
   }
 )(Home)

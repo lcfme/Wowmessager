@@ -1,8 +1,9 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux'
-import mainLayout from './layout/main-layout/reducers'
 import thunk from 'redux-thunk'
+import mainLayout from './layout/main-layout/reducers'
+import moments from './modules/moments/reducers'
 
-const combinedReducer = combineReducers({mainLayout})
+const combinedReducer = combineReducers({mainLayout, moments})
 export default createStore(
   combinedReducer,
   applyMiddleware(thunk)
